@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "demo-dev": "cd ./demo-vue webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "demo-start": "cd ./demo-vue npm run dev",
+    "demo-dev": "cd ./demo-vue && npm run dev",
+    "demo-init": "cd ./demo-vue && yarn install",
     "deploy": "sh build.sh"
   },
   "repository": {

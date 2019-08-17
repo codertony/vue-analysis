@@ -10892,9 +10892,8 @@ var mount = Vue.prototype.$mount;
 Vue.prototype.$mount = function (
   el,
   hydrating
-) {
+) {Vue.prototype.$mount
   el = el && query(el);
-
   /* istanbul ignore if */
   if (el === document.body || el === document.documentElement) {
     "development" !== 'production' && warn(
